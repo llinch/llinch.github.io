@@ -261,6 +261,8 @@ body {
 }
 
 .podcasts__item {
+  padding-right: 15px;
+  padding-left: 15px;
   max-width: 50%;
   display: flex;
   -webkit-box-flex: 0;
@@ -270,14 +272,15 @@ body {
   background-color: #fff;
   background-clip: content-box;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  font-size: 0;
 }
 
 .podcasts__block {
-  padding-top: 38px;
-  padding-bottom: 38px;
-  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 79.5%;
+  padding: 38px 30px;
+  flex-grow: 1;
 }
 
 
@@ -293,7 +296,8 @@ body {
 }
 
 .podcasts__date {
-  padding: 3px 8px;
+  width: 9%;
+  padding: 2px 0px;
   position: absolute;
   left: 14px;
   bottom: 0;
@@ -327,7 +331,8 @@ body {
 }
 
 .podcasts__photo {
-  height: 140px;
+  max-width: 112px;
+  height: 100%;
 }
 
 /* transfers */
@@ -350,11 +355,10 @@ body {
 
 .transfers__list {
   padding: 0;
-  padding-top: 12px;
+  padding-top: 13px;
   row-gap: 27px;
   display: flex;
   flex-wrap: wrap;
-  display: -webkit-box;
   display: -ms-flexbox;
   -ms-flex-wrap: wrap;
   margin-right: -15px;
@@ -366,6 +370,7 @@ body {
 }
 
 .transfers__item {
+  display: flex;
   box-sizing: border-box;
   font-size: 0;
   -webkit-box-flex: 0;
@@ -377,9 +382,15 @@ body {
   padding-left: 15px
 }
 
+.transfers__card {
+  max-width: 100%;
+  display: flex;
+    flex-direction: column;
+}
+
 .transfers__archive {
   position: absolute;
-  bottom: 97px;
+  bottom: 94px;
   max-width: 25%;
   display: flex;
   flex-direction: column;
@@ -391,6 +402,7 @@ body {
 .transfers__button {
   margin-bottom: 12px;
   padding: 9px 53px;
+  max-width: 100%;
   border: 3px solid #121723;
   border-radius: 77px;
   align-self: flex-start;
@@ -436,7 +448,7 @@ body {
 
 .transfers__shedule {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: auto;
   display: block;
   font-weight: 400;
   font-size: 12px;
@@ -444,13 +456,18 @@ body {
 }
 
 .transfers__block {
+  min-height: 114px;
+  display: flex;
+  flex-direction: column;
   padding: 20px 16px;
   border: 1px solid #e6e8ec;
+  flex-grow: 1;
 }
 
 .transfers__link {
   padding-right: 24px;
   position: relative;
+  align-self: flex-start;
   font-style: italic;
   font-weight: 400;
   font-size: 16px;
@@ -534,7 +551,7 @@ body {
 
 .guests__text {
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 50px;
   max-width: 70%;
   font-weight: 400;
   font-size: 20px;
@@ -570,6 +587,7 @@ body {
 
 .guests__btn {
   padding: 10px 17px;
+  max-width: 100%;
   border: 3px solid #aa9dfa;
   border-radius: 77px;
   align-self: flex-start;
@@ -615,6 +633,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  align-content: flex-start;
   margin-right: -15px;
   margin-left: -15px;
   list-style: none;
@@ -774,6 +793,7 @@ body {
 
 .shop__btn {
   padding: 25px 11.5px 23px 38.5px;
+  max-width: 100%;
   align-self: start;
   border: 2px solid #f0d288;
   border-radius: 100px;
@@ -1139,13 +1159,13 @@ body {
 }
 
 .footer__nav-item {
+  max-width: 33.3%;
   display: inline-block;
-  /* Или inline-flex */
 }
 
 .footer__nav-list {
   display: flex;
-  max-height: 91px;
+  max-height: 120px;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 17px;
